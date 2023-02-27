@@ -19,23 +19,30 @@ public class MainActivity extends AppCompatActivity {
     private Button mButton;
     private ImageView image1;
     private boolean isFragmentDisplayed = false;
+    private boolean displayStatic = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        if (displayStatic) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main_statis);
 
-        // layoutParams = new RelativeLayout.LayoutParams( RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
-        mButton = findViewById(R.id.btn_toggle_fragment);
-        image1 = findViewById(R.id.iv_image1);
-        mButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                checkFragment();
-            }
-        });
+            mButton = findViewById(R.id.btn_toggle_fragment);
+            mButton.setEnabled(false);
+        } else {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
 
-        closeFragment();
+            mButton = findViewById(R.id.btn_toggle_fragment);
+            mButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    checkFragment();
+                }
+            });
+
+            closeFragment();
+        }
     }
 
     public void displayFragment() {

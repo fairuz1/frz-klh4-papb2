@@ -1,0 +1,80 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_vespa98"/>
+
+        <TextView
+            android:id="@+id/tv_header1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_image1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/vespa98_brown_dark"
+            android:text="@string/vespa98_header"/>
+
+        <TextView
+            android:id="@+id/tv_descriptions1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_header1"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/vespa98_brown_dark"
+            android:text="@string/vespa98_descriptions1"/>
+
+        <TextView
+            android:id="@+id/tv_descriptions2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/tv_descriptions1"
+            android:textSize="16sp"
+            android:textColor="@color/vespa98_brown_dark"
+            android:text="@string/vespa98_descriptions2"/>
+
+        <TextView
+            android:id="@+id/tv_descriptions3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_descriptions2"
+            android:textSize="16sp"
+            android:textColor="@color/vespa98_brown_dark"
+            android:text="@string/vespa98_descriptions3"/>
+
+        <Button
+            android:id="@+id/btn_toggle_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_descriptions3"
+            android:background="@drawable/btn_rounded"
+            android:textAllCaps="false"
+            android:textColor="@color/vespa98_white"
+            android:textSize="16sp"
+            android:text="@string/see_excesses"/>
+
+    </RelativeLayout>
+
+</ScrollView>
