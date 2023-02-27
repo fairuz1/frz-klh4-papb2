@@ -17,12 +17,12 @@ import android.widget.RelativeLayout;
 public class MainActivity extends AppCompatActivity {
 
     private Button mButton;
-    private ImageView image1;
     private boolean isFragmentDisplayed = false;
-    private boolean displayStatic = false;
+    private boolean displayStatic = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // change displayStatic value to true to display static views
         if (displayStatic) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main_statis);
