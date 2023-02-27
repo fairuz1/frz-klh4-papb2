@@ -4,13 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button mButton;
+    private ImageView image1;
     private boolean isFragmentDisplayed = false;
 
     @Override
@@ -18,17 +25,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mButton = findViewById(R.id.open_button);
+        // layoutParams = new RelativeLayout.LayoutParams( RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        mButton = findViewById(R.id.btn_toggle_fragment);
+        image1 = findViewById(R.id.iv_image1);
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!isFragmentDisplayed) {
-                    displayFragment();
-                } else {
-                    closeFragment();
-                }
+                checkFragment();
             }
         });
+
+        closeFragment();
     }
 
     public void displayFragment() {
@@ -51,5 +58,13 @@ public class MainActivity extends AppCompatActivity {
 
         mButton.setText(R.string.open);
         isFragmentDisplayed = false;
+    }
+
+    public void checkFragment() {
+        if (!isFragmentDisplayed) {
+            displayFragment();
+        } else {
+            closeFragment();
+        }
     }
 }

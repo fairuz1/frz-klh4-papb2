@@ -3,35 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:background="@color/my_fragment_color"
+    android:orientation="vertical"
     tools:context=".SimpleFragment">
 
     <TextView
-        android:id="@+id/fragment_header"
+        android:id="@+id/tv_descriptions2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:padding="4dp"
-        android:text="@string/question_article" />
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/vespa98_brown_dark"
+        android:text="@string/vespa98_descriptions2"/>
 
-    <RadioGroup
-        android:id="@+id/radio_group"
+    <TextView
+        android:id="@+id/tv_descriptions3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioButton
-            android:id="@+id/radio_button_yes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
-            android:text="@string/yes" />
-        <RadioButton
-            android:id="@+id/radio_button_no"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
-            android:text="@string/no" />
-    </RadioGroup>
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/vespa98_brown_dark"
+        android:text="@string/vespa98_descriptions3"/>
 
 </LinearLayout>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/open_button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="@string/open"-->
+    <!--        android:layout_marginStart="20dp" />-->

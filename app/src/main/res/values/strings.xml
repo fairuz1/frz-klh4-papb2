@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FragmentExample</string>
+    <string name="app_name">Vespas</string>
 
     <!-- Placeholder text for this example. -->
     <string name="title1">Cry for a Shadow</string>
@@ -17,12 +17,24 @@
     <string name="question_article">LIKE THE ARTICLE?</string>
 
     <!-- Text for the button in FragmentExample2. -->
-    <string name="open">Open</string>
-    <string name="close">Close</string>
+    <string name="open">See Excesses</string>
+    <string name="close">Show Less</string>
 
     <!-- Text for the exception message in FragmentCommunicate. -->
     <string name="exception_message">must implement OnFragmentInteractionListener</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="see_excesses">See Excesses</string>
+    <string name="vespa98_header">VESPA\'98 ITALIAN</string>
+
+    <string name="vespa98_descriptions1">The Vespa 98 was the first serially built Vespa from Piaggio. It was built between 1946 and 1947 and was divided into four series: V.98/1 and V.98/2 and from 1947 on V.98/3 and V.98/4, with minor modifications.</string>
+    <string name="vespa98_descriptions2">The basis for the first model were the prototypes Paperino (or MP5) and MP6 by Corradino D\'Ascanio and Enrico Piaggio. An essential feature was the free passage, which is still maintained today. The V98 has a 98 cc engine, a three-speed gearbox and a top speed of 60 km/h. The leg shield is evenly curved. There is no main stand and for parking it is leaned on an outrigger that protrudes from the rear footboard on the left and right.</string>
+    <string name="vespa98_descriptions3">Frame numbers by year of manufacture:
+
+1946: V98 1001-1339
+Quantity V98/1: 339
+Total quantity V98: 17.079
+    </string>
 
 </resources>

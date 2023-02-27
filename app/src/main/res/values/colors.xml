@@ -7,8 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#443633</color>
+    <color name="colorPrimaryDark">#443633</color>
     <color name="colorAccent">#FF4081</color>
     <color name="my_fragment_color">#ffa500</color>
+
+    <color name="vespa98_brown_light">#85776F</color>
+    <color name="vespa98_grey">#B1B4B2</color>
+    <color name="vespa98_white">#EAE8E5</color>
+    <color name="vespa98_brown_dark">#443633</color>
+    <color name="vespa98_brown_light2">#A79D91</color>
 </resources>
