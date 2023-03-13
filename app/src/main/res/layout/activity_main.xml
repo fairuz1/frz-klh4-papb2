@@ -5,6 +5,7 @@
     android:id="@+id/layout_constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -21,22 +22,143 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_heading"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/label_light"
-                android:text="Light Sensor : %1$.2f" />
+                android:text="@string/mobile_device_sensors"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tv_sensor_child_header1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/label_proximity"
-                android:text="Proximity Sensor : %1$.2f"
+                android:text="@string/child_heading1"
+                android:gravity="center"
                 android:layout_marginBottom="20dp"/>
 
             <TextView
+                android:id="@+id/tv_sensor_name_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/light"/>
+
+            <Button
+                android:id="@+id/btn_sensor_color_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/default_light"
+                android:backgroundTint="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_sensor_name_proximity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proximity"/>
+
+            <Button
+                android:id="@+id/btn_sensor_color_proximity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/default_proximity"
+                android:backgroundTint="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_sensor_name_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/relative_humidity"/>
+
+            <Button
+                android:id="@+id/btn_sensor_color_humidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/default_percentage"
+                android:backgroundTint="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_sensor_name_ambient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ambient_temperature"/>
+
+            <Button
+                android:id="@+id/btn_sensor_color_ambient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/default_temperature"
+                android:backgroundTint="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_sensor_name_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pressure"/>
+
+            <Button
+                android:id="@+id/btn_sensor_color_pressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/default_pressure"
+                android:backgroundTint="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_sensor_name_gyroscope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gyroscope_sensor"/>
+
+            <Button
+                android:id="@+id/btn_sensor_color_gyroscope"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/default_degree"
+                android:backgroundTint="@color/black"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/label_light"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Light Sensor : %1$.2f" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/label_proximity"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Proximity Sensor : %1$.2f"-->
+<!--                android:layout_marginBottom="20dp"/>-->
+
+            <TextView
+                android:id="@+id/tv_heading_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/all_sensors"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_sensor_child_header2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/child_header2"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
                 android:id="@+id/sensor_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="@string/placeholder"/>
 
         </LinearLayout>

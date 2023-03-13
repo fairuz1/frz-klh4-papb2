@@ -11,4 +11,20 @@
     <string name="placeholder">placeholder</string>
     <string name="proximity_sensor_1_2f">Proximity Sensor : %1$.2f</string>
     <string name="light_sensor_1_2f">light Sensor : %1$.2f</string>
+    <string name="mobile_device_sensors">Mobile Device Sensors</string>
+    <string name="light">Light Sensor</string>
+    <string name="proximity">Proximity Sensor</string>
+    <string name="relative_humidity">Relative Humidity Sensor</string>
+    <string name="ambient_temperature">Ambient Temperature Sensor</string>
+    <string name="pressure">Pressure Sensor</string>
+    <string name="all_sensors">All Sensors</string>
+    <string name="default_pressure">0 hPa</string>
+    <string name="default_temperature">0 Celsius</string>
+    <string name="default_percentage">0 %</string>
+    <string name="default_proximity">0 cm</string>
+    <string name="default_light">0 Lux</string>
+    <string name="child_heading1">Display all changes in this device\'s sensors</string>
+    <string name="child_header2">Display all detected sensors in this device</string>
+    <string name="default_degree">0 Degree</string>
+    <string name="gyroscope_sensor">Gyroscope Sensor</string>
 </resources>
