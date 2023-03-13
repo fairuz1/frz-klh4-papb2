@@ -8,4 +8,7 @@
     <string name="widget_id_label">Widget ID</string>
     <string name="widget_update_label">Last Update</string>
     <string name="widget_button_update">Update Now</string>
+    <string name="placeholder">placeholder</string>
+    <string name="proximity_sensor_1_2f">Proximity Sensor : %1$.2f</string>
+    <string name="light_sensor_1_2f">light Sensor : %1$.2f</string>
 </resources>
