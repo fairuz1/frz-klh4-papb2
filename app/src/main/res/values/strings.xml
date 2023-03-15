@@ -27,4 +27,7 @@
     <string name="child_header2">Display all detected sensors in this device</string>
     <string name="default_degree">0 Degree</string>
     <string name="gyroscope_sensor">Gyroscope Sensor</string>
+    <string name="label_roll_string">label roll</string>
+    <string name="label_pitch_string">label pitch</string>
+    <string name="value_format">value format</string>
 </resources>
