@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PAPB-20230315</string>
+    <string name="heading1">レッツ・ショップ！</string>
+    <string name="buah_mangga">マンゴー</string>
+    <string name="buah_apel">りんご</string>
+    <string name="buah_jeruk">オレンジ</string>
+    <string name="desc2">購入したい商品を選択すると、お使いの言語に応じた通貨でショッピングの合計金額が表示されます!</string>
+    <string name="desc1">このアプリケーションには複数の言語があります</string>
+    <string name="buah_buahan">果物</string>
+    <string name="coklat_panas">ホットチョコレート</string>
+    <string name="es_teh_lemon">レモンアイスティー</string>
+    <string name="kopi">コーヒー</string>
+    <string name="minuman">飲む</string>
+    <string name="jajanan">おやつ</string>
+    <string name="pangsit">餃子</string>
+    <string name="lumpia">春巻</string>
+    <string name="hapus_pilihan">明確な選択</string>
+    <string name="hitung_total_harga">合計金額を計算する</string>
+    <string name="total_harga">合計金額：</string>
+    <string name="harga_buah_mangga">71.37</string>
+    <string name="harga_buah_apel">62.45</string>
+    <string name="harga_coklat_panas">53.53</string>
+    <string name="harga_pangsit">44.60</string>
+    <string name="harga_lumpia">26.76</string>
+    <string name="harga_es_teh_lemon">26.76</string>
+    <string name="harga_satuan_rupiah">" 単価（日本円）"</string>
+    <string name="tambah_pesanan_personal">パーソナルオーダー料金追加</string>
+    <string name="tambah">プラス</string>
+</resources>

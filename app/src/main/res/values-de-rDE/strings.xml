@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PAPB-20230315</string>
+    <string name="heading1">Lass uns einkaufen!</string>
+    <string name="buah_mangga">Mango</string>
+    <string name="buah_apel">" Apfel"</string>
+    <string name="buah_jeruk">Orangenfrucht</string>
+    <string name="desc2">Wählen Sie die Artikel aus, die Sie kaufen möchten, und sehen Sie den Gesamtpreis Ihres Einkaufs in der Währung Ihrer Sprache!</string>
+    <string name="desc1">" Diese Anwendung hat mehrere Sprachen"</string>
+    <string name="buah_buahan">" Früchte"</string>
+    <string name="coklat_panas">Heiße Schokolade</string>
+    <string name="es_teh_lemon">Zitronen-Eistee</string>
+    <string name="kopi">Kaffee</string>
+    <string name="minuman">trinken</string>
+    <string name="jajanan">Snacks</string>
+    <string name="pangsit">Knödel</string>
+    <string name="lumpia">Frühlingsrollen</string>
+    <string name="hapus_pilihan">Auswahl löschen</string>
+    <string name="hitung_total_harga">Gesamtpreis berechnen</string>
+    <string name="total_harga">Gesamtpreis:</string>
+    <string name="harga_buah_mangga">0.49</string>
+    <string name="harga_buah_apel">0.43</string>
+    <string name="harga_coklat_panas">0.37</string>
+    <string name="harga_pangsit">0.31</string>
+    <string name="harga_lumpia">0.18</string>
+    <string name="harga_es_teh_lemon">0.18</string>
+    <string name="harga_satuan_rupiah">Stückpreis (in Euro)</string>
+    <string name="tambah_pesanan_personal">Persönliche Bestellgebühr hinzufügen</string>
+    <string name="tambah">Plus</string>
+</resources>

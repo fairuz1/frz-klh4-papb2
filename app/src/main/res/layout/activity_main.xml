@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/heading1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/desc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desc1"
+        android:textColor="@color/red"
+        android:textSize="@dimen/kecil_10"
+        android:textStyle="bold"
+        android:layout_below="@id/heading1"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desc2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_below="@id/desc1" />
+
+    <LinearLayout
+        android:id="@+id/pilihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/desc2"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/subheading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buah_buahan"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/group1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/buah_mangga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buah_mangga"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:id="@+id/buah_apel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buah_apel"
+                    android:textSize="12sp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/subheading2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minuman"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/group2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/coklat_panas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coklat_panas"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:id="@+id/es_teh_lemon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/es_teh_lemon"
+                    android:textSize="12sp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subheading3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jajanan"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/group3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/pangsit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pangsit"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:id="@+id/lumpia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lumpia"
+                    android:textSize="12sp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hapus_pilihan"
+        android:textSize="@dimen/kecil_10"
+        android:layout_below="@id/pilihan"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hitung_total_harga"
+        android:textSize="@dimen/kecil_10"
+        android:backgroundTint="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/pilihan"
+        android:layout_toEndOf="@id/hapus"/>
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_harga"
+        android:layout_below="@id/hitung"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label1"
+        android:text="@string/default_total"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/harga_satuan_rupiah"
+        android:layout_below="@id/total"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label2"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/data1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buah_mangga"
+            android:textColor="@color/black"
+            android:textSize="@dimen/kecil_10" />
+
+        <TextView
+            android:id="@+id/detail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/kecil_10"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/harga_buah_mangga"
+            android:layout_toEndOf="@id/data4"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/data2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buah_apel"
+            android:textSize="@dimen/kecil_10"
+            android:textColor="@color/black"
+            android:layout_below="@id/data1"/>
+
+        <TextView
+            android:id="@+id/detail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/kecil_10"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/harga_buah_apel"
+            android:layout_toEndOf="@id/data4"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/data1"/>
+
+        <TextView
+            android:id="@+id/data3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coklat_panas"
+            android:textSize="@dimen/kecil_10"
+            android:textColor="@color/black"
+            android:layout_below="@id/data2"/>
+
+        <TextView
+            android:id="@+id/detail3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/kecil_10"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/harga_coklat_panas"
+            android:layout_toEndOf="@id/data4"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/data2"/>
+
+        <TextView
+            android:id="@+id/data4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/es_teh_lemon"
+            android:textSize="@dimen/kecil_10"
+            android:textColor="@color/black"
+            android:layout_below="@id/data3"/>
+
+        <TextView
+            android:id="@+id/detail4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/kecil_10"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/harga_es_teh_lemon"
+            android:layout_toEndOf="@id/data4"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/data3"/>
+
+        <TextView
+            android:id="@+id/data5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pangsit"
+            android:textSize="@dimen/kecil_10"
+            android:textColor="@color/black"
+            android:layout_below="@id/data4"/>
+
+        <TextView
+            android:id="@+id/detail5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/kecil_10"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/harga_pangsit"
+            android:layout_toEndOf="@id/data4"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/data4"/>
+
+        <TextView
+            android:id="@+id/data6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lumpia"
+            android:textSize="@dimen/kecil_10"
+            android:textColor="@color/black"
+            android:layout_below="@id/data5"/>
+
+        <TextView
+            android:id="@+id/detail6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/kecil_10"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/harga_lumpia"
+            android:layout_toEndOf="@id/data4"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/data5"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/subheading4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/tambah_pesanan_personal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout4"/>
+
+    <EditText
+        android:id="@+id/custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/default_total"
+        android:textSize="@dimen/kecil_10"
+        android:padding="@dimen/kecil_10"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/subheading4"/>
+
+    <Button
+        android:id="@+id/hitung2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tambah"
+        android:textSize="@dimen/kecil_10"
+        android:backgroundTint="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/custom" />
+
+
+</RelativeLayout>
