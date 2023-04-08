@@ -18,6 +18,10 @@
         android:title="Satellite Map"
         app:showAsAction="never"
         />
+    <item android:id="@+id/custom_map"
+        android:title="Custom Map"
+        app:showAsAction="never"
+        />
 
 
 </menu>
