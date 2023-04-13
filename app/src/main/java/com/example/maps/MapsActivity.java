@@ -47,20 +47,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         setContentView(binding.getRoot());
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
 
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -69,10 +59,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         LatLng ugm = new LatLng(-7.770789235420296, 110.37763635355337);
         mMap.addMarker(new MarkerOptions()
                 .position(vokasi)
-                .title("Marker in Vokasi")
+                .title("Vokasi")
                 .icon(BitmapFromVector(getApplicationContext(), R.drawable.baseline_school))
         );
-        mMap.addMarker(new MarkerOptions().position(ugm).title("Marker in UGM"));
+        mMap.addMarker(new MarkerOptions().position(ugm).title("UGM"));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(vokasi,20));
         setMapLongClick(mMap);

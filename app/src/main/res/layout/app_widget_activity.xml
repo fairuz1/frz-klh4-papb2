@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Maps.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Maps.AppWidgetContainer">
+
+    <TextView
+        android:id="@+id/track_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_of_walking_excercise"/>
+
+    <TextView
+        android:id="@+id/track_history_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/track_history"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="@string/_0"/>
+</RelativeLayout>

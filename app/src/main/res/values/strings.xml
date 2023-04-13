@@ -1,4 +1,18 @@
 <resources>
-    <string name="app_name">Maps</string>
-    <string name="title_activity_maps">MapsActivity</string>
+    <string name="app_name">Excercise Tracker</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="auth_login">Auth: Login</string>
+    <string name="auth_Register">Auth: Register</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="register_instead">Register instead ?</string>
+    <string name="login_instead">Login instead ?</string>
+    <string name="email">Email</string>
+    <string name="number_of_walking_excercise">number of walking excercise:</string>
+    <string name="wrong_auth">Authentication Failed!</string>
+    <string name="coming_soon">Coming Soon!</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="app_widget_description">This is an app widget description</string>
 </resources>

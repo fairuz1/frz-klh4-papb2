@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">エクササイズトラッカー</string>
+    <string name="auth_Register">認証: 登録</string>
+    <string name="auth_login">認証: ログイン</string>
+    <string name="username">username</string>
+    <string name="password">パスワード</string>
+    <string name="login">ログイン</string>
+    <string name="register">登録</string>
+    <string name="register_instead">代わりに登録しますか?</string>
+    <string name="login_instead">代わりにログインしますか?</string>
+    <string name="email">Eメール</string>
+    <string name="number_of_walking_excercise">歩行運動の回数:</string>
+    <string name="wrong_auth">認証に失敗しました！</string>
+    <string name="coming_soon">近日公開！</string>
+    <string name="app_widget_description">これはアプリ ウィジェットの説明です</string>
+</resources>
