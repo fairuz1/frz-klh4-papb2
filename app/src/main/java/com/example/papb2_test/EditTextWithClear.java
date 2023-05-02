@@ -14,9 +14,12 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatEditText;
 import androidx.core.content.res.ResourcesCompat;
 
+import java.util.Locale;
+
 public class EditTextWithClear extends AppCompatEditText {
 
     Drawable mCLearButtonImage;
+    boolean isClearButtonClicked;
 
     private void init() {
         mCLearButtonImage = ResourcesCompat.getDrawable(
@@ -43,31 +46,42 @@ public class EditTextWithClear extends AppCompatEditText {
         setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
-                if(getCompoundDrawables()[2] != null){
+                // check if compound in left
+                if(getCompoundDrawables()[0] != null){
                     float clearButtonStart = (getWidth()-getPaddingEnd()-mCLearButtonImage.getIntrinsicWidth());
-                    boolean isClearButtonClicked = false;
-                    Log.d("event", String.valueOf(event.getX()));
-                    if (event.getX() > clearButtonStart){
+                    isClearButtonClicked = false;
+                    if (event.getX() < clearButtonStart){
                         isClearButtonClicked = true;
                     }
 
-                    if (isClearButtonClicked){
-                        if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                            mCLearButtonImage = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_clear_black_24dp, null);
-                            showClearButton();
-                        }
-                        if (event.getAction() == MotionEvent.ACTION_UP) {
-                            mCLearButtonImage = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_clear_opaque_24dp, null);
-                            getText().clear();
-                            hideClearButton();
-                            return true;
-                        }
-                    }
-                    else {
-                        return false;
+                // check if compound in right
+                } else if (getCompoundDrawables()[2] != null) {
+                    float clearButtonStart = (getWidth()-getPaddingEnd()-mCLearButtonImage.getIntrinsicWidth());
+                    isClearButtonClicked = false;
+                    if (event.getX() > clearButtonStart){
+                        isClearButtonClicked = true;
                     }
                 }
+
+                if (isClearButtonClicked){
+                    // before click
+                    if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                        mCLearButtonImage = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_clear_black_24dp, null);
+                        showClearButton();
+                    }
+
+                    // after click
+                    if (event.getAction() == MotionEvent.ACTION_UP) {
+                        mCLearButtonImage = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_clear_opaque_24dp, null);
+                        getText().clear();
+                        hideClearButton();
+                        return true;
+                    }
+                }
+                else {
+                    return false;
+                }
+
                 return false;
             }
         });
