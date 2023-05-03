@@ -10,4 +10,7 @@
     <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
     <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
     <string name="last_name">Last name</string>
+
+    <string name="keep_tappng" translatable="false">Keep Tapping</string>
+    <string name="done" translatable="false">Done</string>
 </resources>
