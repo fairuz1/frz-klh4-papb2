@@ -2,6 +2,7 @@ package com.example.papb2_test;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Point;
@@ -65,44 +66,50 @@ public class MainActivity3 extends AppCompatActivity {
             mImageView.setImageBitmap(mBitmap);
 
             mCanvas = new Canvas(mBitmap);
-//            mCanvas.drawColor(mColorBackground);
-            mCanvas.drawText(getString(R.string.keep_tappng), 100, 100, mPaintText);
+            // mCanvas.drawColor(mColorBackground);
+            // mCanvas.drawText(getString(R.string.keep_tappng), 100, 100, mPaintText);
             mOffset += OFFSET;
 
         } else {
             if (mOffset < halfwidth && mOffset < halfHeight) {
+                mCanvas.drawCircle(halfwidth, halfHeight, halfwidth/1.5f, mPaint);
                 mPaint.setColor(mColorRectangle - MULTIPLIER * mOffset);
-                mRect.set(mOffset, mOffset, vWidth - mOffset, vHeight - mOffset);
-                mCanvas.drawRect(mRect, mPaint);
                 mOffset += OFFSET;
-                Log.d("mOffset", String.valueOf(mOffset));
             } else {
                 mPaint.setColor(mColorAccent - MULTIPLIER * mOffset);
-                mCanvas.drawCircle(halfwidth, halfHeight, halfwidth/5, mPaint);
                 mOffset += OFFSET;
-
-//                String text = getString(R.string.done);
-//                mPaintText.getTextBounds(text, 0, text.length(), mBounds);
-//                int x = halfwidth - mBounds.centerX();
-//                int y = halfHeight - mBounds.centerY();
-//                mCanvas.drawText(text, x, y, mPaintText);
-
-                Point a = new Point(halfwidth - 50, halfHeight - 50);
-                Point b = new Point(halfwidth + 50, halfHeight - 50);
-                Point c = new Point(halfwidth, halfHeight + 50);
+                mPaint.setColor(mColorRectangle - MULTIPLIER * mOffset);
 
                 Path path = new Path();
-                path.setFillType(Path.FillType.EVEN_ODD);
-                path.lineTo(a.x, a.y);
-                path.lineTo(b.x, b.y);
-                path.lineTo(c.x, c.y);
-                path.lineTo(a.x, a.y);
+
+                float mid = vWidth / 2;
+                float min = Math.min(vWidth, vHeight);
+                float half = (min / 1.35f) + 100;
+                mid = mid - half;
+
+                path.reset();
+                Paint paint = new Paint();
+                paint.setColor(Color.WHITE);
+                mPaint.setStyle(Paint.Style.FILL);
+
+                // Atas Kiri
+                path.moveTo(mid + half * 0.5f, half * 0.84f);
+                // Atas Kanan
+                path.lineTo(mid + half * 1.5f, half * 0.84f);
+                // Bawah Kiri
+                path.lineTo(mid + half * 0.68f, half * 1.45f);
+                // Tip Atas
+                path.lineTo(mid + half * 1.0f, half * 0.5f);
+                // Bawah Kanan
+                path.lineTo(mid + half * 1.32f, half * 1.45f);
+                // Atas Kiri
+                path.lineTo(mid + half * 0.5f, half * 0.84f);
+
                 path.close();
-
+                mCanvas.drawCircle(halfwidth, halfHeight, halfwidth/1.5f, mPaint);
                 mPaint.setColor(mColorRectangle - MULTIPLIER * mOffset);
-                mCanvas.drawPath(path, mPaint);
 
-                Log.d("mOffset", String.valueOf(mOffset));
+                mCanvas.drawPath(path, paint);
             }
         }
     }
